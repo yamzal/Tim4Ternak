@@ -1,0 +1,174 @@
+
+/*--Stable Pure CSS--*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*---------------------*/
+
+
+
+/*-------General--------*/
+
+section {
+    min-height: 200px;
+}
+
+hr {
+    width: 250px;
+    border-top: 3px solid #999;
+    border-color: #fcb314;
+}
+
+/*----------------------*/
+
+
+/*----------------------*/
+/*-------Sekilas---------*/
+/*----------------------*/
+
+
+/*-----Jumbotron--------*/
+#jumbotron-skl {
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: url(img/banner.jpg)no-repeat center fixed;
+    max-width: 100%;
+    max-height: 100%;
+    background-position: bottom;
+}
+
+#h1jumbotron-skl {
+    font-size: 6vw;
+}
+
+#hrjumbotron-skl {
+    width: 80%;
+}
+
+#h2jumbotron-skl {
+    font-weight: 400px;
+    color: rgba(0, 0, 0, 0.880);
+}
+
+.transbox-skl {
+    margin: 80px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+.transbox h2 {
+    margin: 4%;
+    font-weight: bold;
+    color: #000000;
+}
+
+#contact {
+    background-color: #eee;
+}
+
+/*----------------------*/
+
+
+
+
+/*-------Footer---------*/
+.footer {
+    color: white;
+    padding-bottom: 0px;
+    width: 100%;
+    background-color: #1B2631;
+}
+
+#hfooter {
+    color: #fcb314;
+
+}
+
+#flinkpage ul li a {
+    color: white;
+}
+
+#footerlink li a {
+    color: white;
+}
+
+#useful {
+    color: #fcb314;
+}
+
+#social {
+    color: #fcb314;
+}
+
+/*----------------------*/
+
+
+
+/*-----Copyright--------*/
+#copyright {
+    color: white;
+    background-color: #151414;
+}
+
+/*----------------------*/
+
+
+
+
+/*-----------------------*/
+/*-------Ternak----------*/
+/*-----------------------*/
+
+#panel-tnk {
+
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: justify;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+#container-tnk {
+    text-align: justify;
+    max-height: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    
+    margin-bottom: 25px;
+/*    margin-right: 25px;*/
+    
+}
+
+#content-tnk
+{
+    
+    margin-bottom: 25px;
+    padding: 30px;
+    padding-bottom: 25px;
+    padding-right: 25x;
+    padding-left: 25px;
+    
+}
+
+
+/*
+@media only screen and (max-device-width : 1024px) {
+#super-footer {
+width: 75%;
+position: relative;
+}
+*/
+
+
+
+/*------------------------*/

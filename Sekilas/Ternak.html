@@ -1,0 +1,213 @@
+
+<!doctype html>
+<html lang="en">
+        
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- //Required meta tags -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/release/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!--//Bootstrap CSS -->
+
+    <!--CustomCSS-->
+    <link rel="stylesheet" href="custom.css">
+    <!--//CustomCSS-->
+
+    <style>
+        body{ 
+          display:flex; 
+          flex-direction:column; 
+        }
+
+        #footer-tnk{
+          margin-top:0px; 
+          position: fixed;
+         bottom: 0;
+        }
+        
+       
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-------------------------TERNAK---------------------------->
+    <!---------Navigation Bar-------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid navbar-container">
+            <a class="navbar-brand" href="#" style="font-family:monospace"><img src="img/cow2.png" width="50" height="50" class="rounded-circle" alt="responsive image"> SI PETERNAKAN </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto mb-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sekilas</a>
+                        <div class="dropdown-menu" arial-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Profil</a>
+                            <a class="dropdown-item" href="#">Sejarah</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ternak</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Harga</a>
+                            <a class="dropdown-item" href="#">Hasil</a>
+                            <a class="dropdown-item" href="#">Statistik</a>
+                            <a class="dropdown-item" href="#">Perawatan</a>
+                            <a class="dropdown-item" href="#">Peta Potensi</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layanan</a>
+                        <div class="dropdown-menu" arial-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Info Kesehatan</a>
+                            <a class="dropdown-item" href="#">Forum</a>
+                            <a class="dropdown-item" href="#">Periksa</a>
+                            <a class="dropdown-item" href="#">Pantau Kandang</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/login') }}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/register') }}">Register</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!---------//End Navigation Bar-------->
+
+
+    <!---------Content-------->
+    <section class="TernakI">
+        <div id="container-tnk" class="container mt-5 bg-danger ">
+            <div class="row ">
+                <div id="panel-tnk" class="col bg-warning pb-4 pt-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action" id="list-harga-list" data-toggle="list" href="#list-harga" role="tab" aria-controls="harga">Harga</a>
+                        <a class="list-group-item list-group-item-action" id="list-hasil-list" data-toggle="list" href="#list-hasil" role="tab" aria-controls="hasil">Hasil</a>
+                        <a class="list-group-item list-group-item-action" id="list-statistik-list" data-toggle="list" href="#list-statistik" role="tab" aria-controls="statistik">Statistik</a>
+                        <a class="list-group-item list-group-item-action" id="list-perawatan-list" data-toggle="list" href="#list-perawatan" role="tab" aria-controls="perawatan">Perawatan</a>
+                        <a class="list-group-item list-group-item-action" id="list-potensi-list" data-toggle="list" href="#list-potensi" role="tab" aria-controls="potensi">Potensi</a>
+                    </div>
+
+                </div>
+
+                <div id="content-tnk" class="col-md-9 bg-primary">
+                    <div class="row">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-harga" role="tabpanel" aria-labelledby="list-harga-list">
+                                <!--this is content-->
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ducimus quod? Ex provident excepturi praesentium. Cumque, iure voluptas ullam laudantium pariatur error eos corporis fuga nulla reprehenderit magni iusto explicabo maxime non nemo, neque accusamus id asperiores ipsam eligendi laboriosam quaerat magnam. Reprehenderit inventore totam cupiditate unde ullam eum accusantium voluptates non itaque soluta iure, laudantium quibusdam mollitia consequatur sequi perspiciatis temporibus molestias voluptatum placeat in. Placeat molestiae distinctio molestias, totam dolore suscipit accusantium minima numquam et amet enim, illo. Libero suscipit facere veritatis ab doloremque itaque, illum ea ad optio blanditiis non omnis corporis quam autem ex, asperiores, provident molestiae eveniet vero eum! Eos fugit libero modi optio, maiores culpa minus quia vero laborum dolorem iure nulla expedita labore consectetur veniam enim natus obcaecati eveniet minima facilis amet architecto laboriosam inventore a? Sint, voluptate dolorem porro. Ipsam accusamus, qui repellat. Nesciunt doloribus eum fugit, culpa tempora nemo, ad quisquam placeat a asperiores iusto error adipisci? Culpa nulla doloribus hic sit, ex, pariatur est tenetur saepe ab laudantium velit minus
+                            </div>
+
+                            <div class="tab-pane fade" id="list-hasil" role="tabpanel" aria-labelledby="list-hasil-list">
+                                <!--this is content-->
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptatum.
+                            </div>
+
+                            <div class="tab-pane fade" id="list-statistik" role="tabpanel" aria-labelledby="list-statistik-list">
+                                <!--this is content-->
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic repudiandae, a eveniet dignissimos culpa repellendus libero eligendi atque voluptas modi totam sit rem aliquam maxime ad! Quisquam cumque repellat eius incidunt, quidem asperiores, labore iure beatae sit, tenetur quo delectus vitae! Laudantium minus saepe, error quos necessitatibus repudiandae quia, quasi officia unde quis incidunt facilis quidem aut deleniti placeat aliquid repellendus! Reiciendis veritatis quisquam corporis culpa minima doloremque saepe perferendis placeat vitae in animi architecto repellendus, earum quo quam voluptatem explicabo modi esse, asperiores eum adipisci quos. Sint tempora sapiente, nesciunt ratione maiores doloremque quam, recusandae, officia consequatur in quod praesentium. Dignissimos inventore quod voluptates modi dolor praesentium magni laudantium nostrum iste, quasi quos reiciendis maxime dolorum eum, sequi cumque. Inventore quaerat enim excepturi, doloribus ullam animi repudiandae ut quidem officiis numquam tenetur, optio voluptatibus, iure delectus, architecto culpa corporis incidunt sequi dolorum reprehenderit aspernatur placeat minima minus. Voluptates dignissimos neque molestiae provident molestias animi, asperiores perspiciatis quo accusantium harum laborum ullam soluta voluptatem veniam quis illo, incidunt error minus omnis numquam odio eveniet facere pariatur. Fugiat debitis quia, mollitia voluptatem aliquid culpa aliquam quas nisi delectus. Dicta consequuntur reiciendis reprehenderit ipsum fugit, repudiandae illum magni est temporibus, eum ipsam, quia harum perspiciatis eaque, aliquid ea aspernatur adipisci ab ullam. Dignissimos, iure. Neque, mollitia, modi quasi illum repellendus beatae labore iste id sit velit ipsa, at nam eligendi eaque. Veniam laborum nisi atque vel, debitis nesciunt, consequatur repellat quos doloribus assumenda alias voluptate, rem iure aliquid. Dolorum incidunt, fuga, saepe dignissimos eos quisquam, ratione illum assumenda molestiae nobis autem cumque. Nostrum eligendi voluptatem, quod beatae, ab rerum dolores? Blanditiis commodi deleniti maiores voluptate delectus eos iure at a dolores sit quasi odit, quo necessitatibus, reprehenderit placeat. Illo animi quis, earum suscipit ratione quos voluptate alias veritatis, dolorum nobis necessitatibus tempore.
+                            </div>
+                            <div class="tab-pane fade" id="list-perawatan" role="tabpanel fixed-bottom" aria-labelledby="list-perawatan-list">
+                                <!--this is content-->
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias corporis labore ea accusantium suscipit, eveniet expedita libero atque a, autem itaque eum vitae dolorum adipisci perspiciatis nemo fugiat molestiae deserunt architecto quaerat soluta. Doloribus dolorum temporibus, explicabo fugit dignissimos aliquid perferendis reprehenderit eos voluptatem officia nulla rem suscipit autem rerum quisquam maxime, id excepturi laborum labore. Repellendus unde tenetur veniam corporis, animi numquam, nisi expedita accusantium ex repudiandae voluptates consequuntur blanditiis rerum dolores ipsum? Quod, nemo, consequatur. Vitae illo, consectetur consequuntur error inventore deserunt rerum et, quidem molestiae, iusto itaque quisquam molestias. Deleniti consequatur alias, placeat autem ullam consectetur facilis dolores delectus, voluptates labore eius sapiente odio vel quia fugit rerum ipsum quaerat est. Totam voluptatem veniam ex unde, optio ab! Amet fugit voluptatum cum vitae ipsa suscipit. Placeat perspiciatis, nostrum provident laborum debitis assumenda illum minus inventore! Molestias atque ex quae laborum, quod, sint alias, quisquam quas perspiciatis necessitatibus totam aperiam obcaecati! Natus incidunt corporis sint officia eligendi odio neque ad consectetur sequi. Necessitatibus sequi eos, facere veritatis debitis excepturi doloribus a eveniet vel similique rem, provident esse quo eum et. Debitis consequuntur cumque, eveniet? Architecto ipsum quaerat quasi omnis est modi. Voluptatum sapiente exercitationem optio est
+                            </div>
+                            <div class="tab-pane fade" id="list-potensi" role="tabpanel" aria-labelledby="list-potensi-list">
+                                <!--this is content-->
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ex quo aut rerum similique pariatur. Facilis delectus, consectetur quisquam et necessitatibus quaerat eum odio quasi dignissimos harum nobis nulla ullam magnam quas fuga molestiae molestias ut sed autem incidunt aut minima, suscipit quidem! Illum expedita ab architecto quae provident quis, excepturi iste! Nulla quidem sed non ut voluptatum inventore earum commodi itaque nisi dolorem, laboriosam nobis accusantium tempora consequuntur praesentium excepturi, ipsa facilis, rerum omnis facere perferendis harum quibusdam! Cumque illum nostrum, beatae asperiores vel reiciendis eum, quae eius aut, facilis ullam nihil similique iure cupiditate rerum qui at veniam fugit repellendus quaerat soluta consectetur veritatis officiis quo. Necessitatibus ut dolorem sunt molestias sit, voluptatem enim repellendus minima facilis, esse dolorum. Vel nostrum incidunt non temporibus repellendus velit laudantium sit distinctio illum tempore dolore labore suscipit perferendis pariatur ipsam, culpa nulla at. Quisquam est velit accusantium repellendus libero deleniti blanditiis explicabo ullam, unde tenetur laudantium quod nemo harum eligendi id pariatur. Laborum modi molestiae, consectetur unde dolor culpa quis! Dolorum tenetur quas voluptatem dicta. Labore dolores at ea, voluptates accusantium beatae incidunt quam, temporibus architecto eos rerum omnis, dolorum quae adipisci assumenda aliquid. Necessitatibus molestias ad fuga sed cupiditate ipsum repellendus? Alias voluptate, possimus porro facilis quibusdam obcaecati in ad! Aliquam debitis, vero impedit qui, fugit quia. Amet quisquam cupiditate nesciunt blanditiis optio, possimus temporibus quibusdam itaque error id ut veniam nobis aut quod reprehenderit vel soluta, officiis in fugiat rerum modi mollitia! Perspiciatis adipisci debitis vel unde. Rem quam fuga odio quas blanditiis, excepturi maxime unde distinctio, placeat id perspiciatis incidunt porro, aut necessitatibus libero. Repudiandae, quia eos facere. Quibusdam, alias, recusandae non ab omnis nihil, voluptates laudantium eum, aut illum adipisci illo exercitationem? Recusandae quidem quis vero sapiente alias eveniet possimus quae ullam adipisci magni provident, impedit minima sunt, nihil molestiae deleniti repellendus quos sit eos, fugiat ipsa dolorum. Quaerat incidunt ullam sequi dolor deleniti nulla fugit distinctio vitae explicabo, adipisci ad mollitia? Sequi dolores molestias veniam sapiente, quasi aut, est dignissimos, laboriosam odio enim consequuntur, dolorum rerum illum accusantium quibusdam necessitatibus. Expedita laudantium dolore facilis sequi voluptates dignissimos. Deleniti illum facilis nam enim, expedita alias rem cumque sapiente, tenetur repellat impedit, accusantium non! Nesciunt ipsa magnam beatae commodi reprehenderit consequuntur obcaecati asperiores impedit debitis ab ratione, fugiat aspernatur eos incidunt inventore a. Perspiciatis commodi saepe distinctio voluptates, suscipit architecto cumque molestiae molestias aspernatur tenetur dignissimos atque id omnis doloremque soluta dolores hic ex sunt non? Amet dolorem repudiandae eum eius facilis ducimus fuga facere ullam laudantium corporis. Facilis deleniti voluptatem nemo beatae eos, voluptatibus natus nulla sit quisquam iste eius fugiat error veritatis cupiditate sapiente iure culpa voluptates vero. Ea et quibusdam voluptatem amet ipsum earum, ipsa nemo, qui aperiam minima facere reprehenderit omnis ducimus odio quisquam accusantium tempore autem porro debitis aut possimus exercitationem nihil facilis sit. Error tenetur, at reprehenderit maxime neque quae eum voluptatum vitae tempora aliquam asperiores eaque. Tempore error, velit adipisci harum expedita quis quidem, eligendi illo ad ratione voluptate nisi facere deleniti, cumque optio mollitia quasi nulla qui esse. Officia ullam ad, quas voluptatem quasi, aliquid dolore et consectetur, quia incidunt officiis consequuntur accusamus libero inventore veritatis nemo reiciendis sint nesciunt iure consequatur est itaque sit? Nesciunt cumque perspiciatis dolores vel, doloribus nisi officiis recusandae, aliquam libero nostrum quod iste quas quia ratione enim assumenda. Soluta quia doloribus officia similique culpa voluptatum aliquam quibusdam quisquam qui velit harum sequi veniam, fugiat nihil sed sit totam tempora, iste minus saepe dolore rerum quo? Aliquid impedit numquam laboriosam repudiandae asperiores, vero provident cum placeat officiis nesciunt iusto temporibus aspernatur modi sunt ratione laborum natus necessitatibus adipisci officia eligendi delectus obcaecati maiores voluptatum. Ab distinctio illo, soluta quam accusantium temporibus, esse necessitatibus corporis neque fuga repudiandae deserunt odit ea ullam similique. Sapiente, provident iste impedit porro commodi eligendi, repellendus quam facere, at quasi laboriosam, optio numquam magnam aspernatur sit. Numquam, culpa, aliquid nisi error vel minus recusandae incidunt inventore maxime doloremque qui repellat eveniet nam quaerat iure dignissimos neque rerum, modi repudiandae corporis ipsa fugit beatae ea autem. Eum, praesentium, odio. Obcaecati non repudiandae ipsam, aliquam vitae. Nobis praesentium aliquam officiis aspernatur sequi repudiandae optio, saepe nulla, repellendus mollitia earum recusandae deleniti. Quae quidem quo laborum est quia, vero beatae assumenda, provident praesentium fuga placeat odio ipsa natus sint inventore molestiae voluptates ullam quibusdam corrupti et harum, a quos. Similique quo laudantium, maxime repellendus, beatae placeat voluptate modi sunt dolore. Ducimus cumque obcaecati nostrum fuga cum neque assumenda, vero. Neque magni, iusto assumenda. Ab impedit atque qui, voluptate nulla tempore quaerat ut veniam eaque voluptatem, architecto possimus natus fuga, earum molestias, sit. Labore quisquam, quae qui similique natus distinctio, excepturi sequi laboriosam consectetur dignissimos numquam quo sapiente itaque, corporis laborum ad eligendi ea. Minima quaerat nisi possimus, expedita sequi tempora distinctio autem reiciendis voluptate!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------//End Content-------->
+
+
+
+    <!-------Footer--------->
+    <footer id="footer" class="footer pt-4 bg-dark">
+        <div class="footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6">
+                        <h1 id="hfooter">Sistem Informasi Peternakan</h1>
+                        <p></p>
+                    </div>
+                    <div id="flinkpage" class="col-lg-4 col-md-6">
+                        <h4 id="useful">Useful links</h4>
+                        <ul>
+                            <li><a href="#">Beranda</a></li>
+                            <li><a href="#">Sekilas</a></li>
+                            <li><a href="#">Ternak</a></li>
+                            <li><a href="#">Ternak</a></li>
+                            <li><a href="#">Layanan</a></li>
+                        </ul>
+                    </div>
+                    <div id="footerlink" class="col-lg-2 col-md-6 ">
+                        <h4 id="social">Social Media</h4>
+                        <ul>
+                            <li><a href="https://twitter.com/"><img src="img/twitter.png" data-toggle="tooltip" data-placement="right" title="Twitter"></a></li>
+                            <li><a href="https://www.facebook.com/"><img src="img/facebook.png" data-toggle="tooltip" data-placement="right" title="Facebook"></a></li>
+                            <li><a href="https://plus.google.com/discover"><img src="img/google-plus.png" data-toggle="tooltip" data-placement="right" title="Google Plus"></a></li>
+                            <li><a href="https://www.youtube.com/"><img src="img/youtube.png" data-toggle="tooltip" data-placement="right" title="Twitter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!---------Copyright-------->
+            <div id="copyright" class="container-expand text-center">
+                <span class="">Copyright &copy; SIPT 2018. Allright Rerserved | Design by My Team.</span>
+            </div>
+            <!---------//End Navigation Copyright-------->
+
+        </div>
+    </footer>
+    <!---------//End Footer-------->
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery.2.1.1/jquery.min.js"></script>
+    <!--Tooltip-->
+    <script type="text/javascript">
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+
+</html>
